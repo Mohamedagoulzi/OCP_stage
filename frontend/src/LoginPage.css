@@ -1,0 +1,399 @@
+/* Container principal */
+.login-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Éléments décoratifs de fond */
+.bg-decoration-red {
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.bg-decoration-yellow {
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background-color: #fbbf24;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Contenu principal */
+.main-content {
+  display: flex;
+  width: 95%;
+  max-width: 1400px;
+  height: 85vh;
+  min-height: 700px;
+  position: relative;
+  z-index: 10;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+/* Section verte */
+.green-section {
+  width: 40%;
+  background: linear-gradient(135deg, #4fd1c7 0%, #14b8a6 100%);
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Cercles décoratifs */
+.decoration-circle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.circle-1 {
+  top: -2rem;
+  left: -2rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.circle-2 {
+  top: 5rem;
+  right: -2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.circle-3 {
+  bottom: 3rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.circle-4 {
+  bottom: -3rem;
+  right: 2rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+/* Logo section verte */
+.logo-green {
+  position: absolute;
+  top: 2.5rem;
+  left: 3rem;
+  display: flex;
+  align-items: center;
+  z-index: 15;
+}
+
+.logo-icon-green {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-square {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+.logo-text-green {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Contenu de la section verte */
+.green-content {
+  text-align: center;
+  z-index: 10;
+  margin-top: 2rem;
+}
+
+.green-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.green-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-button {
+  border: 2px solid white;
+  color: white;
+  padding: 0.875rem 3rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.toggle-button:hover {
+  background-color: white;
+  color: #14b8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section blanche */
+.white-section {
+  width: 60%;
+  background-color: white;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Logo section blanche */
+.logo-white {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  z-index: 15;
+}
+
+/*Logo seul (image complète) */
+.custom-logo {
+  max-height: 50px;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+/* Container du formulaire */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #14b8a6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Boutons sociaux */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-btn {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #f9fafb;
+  border-color: #14b8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-text {
+  color: #6b7280;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+/* Champs du formulaire */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #14b8a6;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Mot de passe oublié */
+.forgot-password {
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.forgot-link {
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: #14b8a6;
+  text-decoration: underline;
+}
+
+/* Bouton de soumission */
+.submit-button {
+  width: 100%;
+  background-color: #14b8a6;
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #0d9488;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-content {
+    width: 92%;
+    height: 80vh;
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    width: 95%;
+    margin: 1rem;
+    height: auto;
+    min-height: auto;
+  }
+  
+  .green-section,
+  .white-section {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .green-section {
+    min-height: 300px;
+  }
+  
+  .logo-white,
+  .logo-green {
+    position: static;
+    margin: 0 0 2rem 0;
+    justify-content: center;
+  }
+  
+  .form-container {
+    max-width: 100%;
+  }
+  
+  .bg-decoration-red,
+  .bg-decoration-yellow {
+    width: 250px;
+    height: 250px;
+  }
+  .error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+}
